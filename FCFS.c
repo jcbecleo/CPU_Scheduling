@@ -10,7 +10,7 @@ struct Process {
 };
 void fcfs_scheduling(struct Process processes[], int n) {
     int i,j;
-    for (i = 0; i < n - 1; i++) {
+    for (i = 0; i < n - 1; i++) {`
         for (j = 0; j < n - i - 1; j++) {
             if (processes[j].arrival_time > processes[j + 1].arrival_time) {
                 struct Process temp = processes[j];
@@ -62,6 +62,9 @@ void display_gantt_chart(struct Process processes[], int n) {
 
 int main() {
     int n;
+    printf("+===============+\n");
+    printf("  First Come First Serve\n");
+    printf("+===============+\n\n");
 
     printf("Enter the number of processes: ");
     scanf("%d", &n);
