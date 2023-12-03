@@ -38,6 +38,9 @@ void displayTable(struct process queue[], int size)
 
 int main()
 {
+    printf("+===============+\n");
+    printf("  Multilevel Queue\n");
+    printf("+===============+\n\n");
     int i, j, k = 0, r = 0, time = 0, tq1, tq2, flag = 0;
     char c;
     printf("Enter the number of processes:");
