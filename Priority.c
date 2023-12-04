@@ -72,6 +72,9 @@ void calculateAverages(struct Process processes[], int n, float *avgTurnaround, 
 
 
 int main() {
+    printf("+===============+\n");
+    printf("  Priority Preemptive\n");
+    printf("+===============+\n\n");
     int n;
     printf("Enter the number of processes: ");
     scanf("%d", &n);

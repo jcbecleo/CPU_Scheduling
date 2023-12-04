@@ -71,6 +71,9 @@ void sjf(struct Process *processes, int n) {
 }
 
 int main() {
+    printf("+===============+\n");
+    printf("  Shortest Job First\n");
+    printf("+===============+\n\n");
     int n;
     printf("Enter the number of processes: ");
     scanf("%d", &n);
